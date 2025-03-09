@@ -3,8 +3,6 @@ language: python
 
 python:
   - "3.10"
-  - "3.11"
-  - "3.12"
   - "3.13"
 
 deploy:
@@ -17,6 +15,8 @@ deploy:
   app: mysite-polls
   env: polls-env
   bucket_name: us-east-2
+  on:
+    all_branches: true 
 
 install:
   - pip install --upgrade pip
