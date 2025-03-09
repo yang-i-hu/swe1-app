@@ -10,6 +10,7 @@ deploy:
   bucket_name: us-east-2
 
 install:
+  - pip install --upgrade pip
   - pip install -r requirements.txt
   - pip install coveralls pytest pytest-cov
 

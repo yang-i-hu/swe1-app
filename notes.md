@@ -27,14 +27,9 @@ max-line-length = 88
 
 ### display badges
 #### Travis CI Build Status Badge
-```
-![Build Status](https://travis-ci.com/<USERNAME>/<REPO>.svg?branch=main)
-```
-
+- Go to travis-ci.com and click on the build status badge next to the repository name
 ####  Coveralls Code Coverage Badge
-```
-![Coverage Status](https://coveralls.io/repos/github/<USERNAME>/<REPO>/badge.svg?branch=main)
-```
+
 
 
 ## CI/CD
