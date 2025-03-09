@@ -1,0 +1,21 @@
+deploy:
+  provider: elasticbeanstalk
+  access_key_id:
+    secure: ZDGJY9uzfvig0XXevawOHZiIK58hXigFCx8zid/1pWb4Hmrdmw8bR1313IW0Po1RrJ3o5g6+2W6YeuroTwyNKDhQD87nG3+GI2Iv7ljNKqgTyVDh2K/V5QRfGuEXaw+s4vrY/uz5PgJ0X8dv4rHqqLNlSaMFd29FjlG1bvP+lK1pipJb1nu6eVUphyQnXCyzHYBb713OiIWcikbiM/MuvCWIYlkhnlT7GCpupxLxd/Kn/qALjW1+5IBwIDqoU2HPg0QLe2UBRvIMHDA/MpD/Dj/AG34D/QyxdX2RbRdVOhT2kjHRCPbIHDW+VqujHqR6Dt7sPzYVznZ1MWdzxYXmCfBIt8s6rl6yh3KgtwoHxPsZmS4tnIREaFMn80iC5bVyJ0rvrhXRFNzb/SQtFRNSAmXaCTBSgY/mqWgXTDIkXlzsZHFdLF+PIzidqb4ugR+bxy89J6bEFZ6e4PKmGba/ya5lHEZE7Q509PBYAWEdukTOFZaVOWGAnQPV0Xm9JS1xryWHt7podcVJMDRkei8yPZyXGcEHtDp0hzE09O5JIPxWNfDWzpuaZgbjV79GL6egSoKrUMkPVTozXFD8MCtSXK3+wiZV3QZQvhtDor6XPfEFWN+YbsbRiIFcQC3z+ixvC8AUbdydgbH0nc4GQtFJmiaIESJAJ3nSOyfZe0mAeKQ=
+  secret_access_key:
+    secure: AAQwbw3VsQTVsCaXWi4sX2yQ3Jya+RG4POUW72H/hEvptqx2vCqqtFSjhOwsrPeZ25Y64MALRtZraNiTADO5P4qKgUex62T/1xsLbKhE9T6RHRcJ57+QFU9iIiGoUYN83PvrycHTkCFp1YebWYxeWM6n2PGn7kIjSD2Hushn3sbeK2k5w4oVX7/F3mQ4L/NPVYOx08/W9ED7mmk2SdAYZMT6FadpUxHq8ETE/5n32DcVrwp7Xg5YeKfkfU8acudHqTba8o7RdFAxJWUtOkvdBGf4r9rqMI6bsvXtYaPTEeVGH78mefQKl41r1MVZFbBYM/l59jdtedRmUVjmrWfeMx44KgWWZTXty3P1aIBiDTCo55VUw9A2uT6yWIADQei/EpiTydcWa9m9wmcgkj4FiTiTO0qo3cJKeviIpNyOM3OmwwW8NWCV92pAzCVGT42M42LMhl90Ca+MzDUUQVMebG2fkhb7UiX6HsQmMq7q0WB6vHNrEUFxPpCulPjH5H56trnSBVh70EbZtOJ6UqSwtUyWZ3NCqWcVsB9GifC6Etsf5rK1wjKkBfjW87FJEEaiYxAtQVyIBZGjVJiNw5Wzv7Hk0ZXdRxl95KI5Bjn/spNJf5z4/NODe9qJ8IsZ/fijMTll/yXVLhsy+zlVNIjMuo4BewC8VRk+D+8Tu4p3pbQ=
+  region: us-east-1
+  app: mysite-polls
+  env: polls-env
+  bucket_name: us-east-2
+
+install:
+  - pip install -r requirements.txt
+  - pip install coveralls pytest pytest-cov
+
+script:
+  - black --check .
+  - flake8
+
+after_success:
+  - coveralls
