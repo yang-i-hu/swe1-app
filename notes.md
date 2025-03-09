@@ -50,4 +50,5 @@ https://docs.travis-ci.com/user/tutorials/tutorials-overview/
 ### coveralls
 - https://coveralls.io/
 - https://pypi.org/project/coveralls/
+- Add COVERALLS REPO TOKEN to Travis CI enviornment variables.
 - Use coverage.py to run your test suite and use coveralls to report the code coverage of those tests
