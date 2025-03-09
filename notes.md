@@ -4,7 +4,7 @@
 - Tutorial: https://docs.djangoproject.com/en/5.0/intro/tutorial01/
 
 ## AWS Elastic Beanstalk Deployment 
-- 
+- Tutorial: https://testdriven.io/blog/django-elastic-beanstalk/
 
 ## Code format and style
 ### black:
