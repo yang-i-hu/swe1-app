@@ -27,9 +27,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     "polls-env.eba-dcbbmcsx.us-east-2.elasticbeanstalk.com",
-    "127.0.0.1"
+    "127.0.0.1",
     "localhost",
-    ]
+]
 
 
 # Application definition
