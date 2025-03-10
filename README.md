@@ -1,7 +1,7 @@
 [![Build Status](https://app.travis-ci.com/yang-i-hu/swe1-app.svg?token=4zxDJmsTkfQghSmstGs4&branch=main)](https://app.travis-ci.com/yang-i-hu/swe1-app)
-[![Coverage Status - Main](https://coveralls.io/repos/github/your-username/your-repo/badge.svg?branch=main)](https://coveralls.io/github/your-username/your-repo?branch=main)
+[![Coverage Status -main](https://coveralls.io/repos/github/yang-i-hu/swe1-app/badge.svg?branch=main)](https://coveralls.io/github/yang-i-hu/swe1-app?branch=main)
 
-[![Coverage Status - Dev](https://coveralls.io/repos/github/your-username/your-repo/badge.svg?branch=dev)](https://coveralls.io/github/your-username/your-repo?branch=dev)
+[![Coverage Status -develop](https://coveralls.io/repos/github/yang-i-hu/swe1-app/badge.svg?branch=develop)](https://coveralls.io/github/yang-i-hu/swe1-app?branch=develop)
 
 
 
